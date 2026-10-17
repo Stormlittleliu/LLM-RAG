@@ -1,0 +1,39 @@
+# ===================== 核心依赖（按实测环境精确锁定） =====================
+# Web 界面（聊天 UI、文件上传、会话状态）
+streamlit==1.40.1
+
+# ===================== RAG 框架（LangChain 1.x） =====================
+langchain==1.4.2
+langchain-core==1.6.4
+langchain-community==0.4.2
+langchain-chroma==1.1.0
+langchain-text-splitters==1.1.2
+
+# ===================== 向量数据库与数值计算 =====================
+chromadb==1.5.9
+numpy==1.26.4
+
+# ===================== 通义千问 SDK 与网络依赖 =====================
+# DashScope：qwen-plus 对话、text-embedding-v4 嵌入
+dashscope==1.27.6
+requests==2.34.2
+urllib3==2.8.0
+aiohttp==3.14.3
+anyio==4.15.1
+
+# ===================== 配置、校验与文件处理 =====================
+pydantic==2.13.5
+python-dotenv==1.2.3
+pillow==11.3.0
+pypdf==5.1.0
+tqdm==4.70.1
+
+# ===================== 可选扩展（按需安装） =====================
+# Word 文档解析（后续扩展 docx 上传入库）
+python-docx>=1.1.0
+# Excel 文档解析（后续扩展 xlsx 上传入库）
+openpyxl>=3.1.2
+# Markdown 文档解析（后续扩展 md 上传入库）
+markdown>=3.5.2
+# 结构化日志（调试与问题排查）
+loguru>=0.7.2
